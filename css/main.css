@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    height: 100%;
+}
+
+
+body {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    background-color: #7529F1;
+    padding: 1.69rem 0rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar_brand-image {
+    width: 60px;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__item {
+    margin: 0 1rem;
+    list-style: none;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Headline */
+
+.headline {
+    margin-top: 3rem;
+}
+
+.headline__title {
+    color: #5926C5;
+    font-size: 45px;
+    width: 75%;
+}
+
+.headline__resume {
+    margin-top: 25px;
+    width: 68%;
+    color: #444444;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.headline__date {
+    margin-top: 13px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #939393;
+}
+
+/* News */
+
+.news {
+    margin: 2.59rem 0rem;
+   
+}
+
+.news__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+}
+
+.news__notice {
+    display: flex;
+    align-items: center;
+}
+
+.news__info {
+    /* margin-left: 1.59rem; */
+    padding-left: 1.79rem;
+    width: 45%;
+}
+
+.news__title {
+    color: #5926C5;
+    font-size: 24px;
+    font-weight: bold;
+    width: 90%;
+}
+
+.news_resume {
+    color: #555555;
+    font-weight: lighter;
+    margin-top: 1.15rem;
+    width: 80%;
+}
+
+.news__date {
+    color: #1B1B1B;
+    margin-top: .7rem;
+
+}
+
+.news__image  {
+    height: 280px;
+    width: 45%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+}
+
+.news__image-1 {
+    background: url('./../assets/img/notice1.png');
+}
+
+.news__image-2 {
+    background: url('./../assets/img/notice2.jpg');
+}
