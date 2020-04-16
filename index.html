@@ -4,9 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Octupus</title>
+    <link rel="stylesheet" href="./css/normalize.css"/>
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
   </head>
   <body>
+
+    <a href="#" id="button__top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
     <header>
       <nav>
         <div class="container">
@@ -23,13 +33,13 @@
                 <a class="navbar__link" href="#">Home</a>
               </li>
               <li class="navbar__item">
-                <a class="navbar__link" href="#">Sobre</a>
+                <a class="navbar__link" href="#personal">Sobre</a>
               </li>
               <li class="navbar__item">
-                <a class="navbar__link" href="#">Contato</a>
+                <a class="navbar__link" href="#form">Contato</a>
               </li>
               <li class="navbar__item">
-                <a class="navbar__link" href="#">Saiba mais</a>
+                <a class="navbar__link" href="#about">Saiba mais</a>
               </li>
             </ul>
           </div>
@@ -89,72 +99,194 @@
           </a>
           <a class="news__link" href="#">
             <div class="news__notice">
-                <div class="news__image news__image-3"></div>
-                <div class="news__info">
-                  <h1 class="news__title">
-                    Crise da COVID-19 aumenta a procura por programadores de COBOL
-                  </h1>
-                  <h3 class="news_resume">
-                    A linguagem de programação COBOL foi criada em 1959 e é vista
-                    como obsoleta há décadas
-                  </h3>
-                  <p class="news__date">Há 37 minutos atrás</p>
-                </div>
+              <div class="news__image news__image-3"></div>
+              <div class="news__info">
+                <h1 class="news__title">
+                  Crise da COVID-19 aumenta a procura por programadores de COBOL
+                </h1>
+                <h3 class="news_resume">
+                  A linguagem de programação COBOL foi criada em 1959 e é vista
+                  como obsoleta há décadas
+                </h3>
+                <p class="news__date">Há 37 minutos atrás</p>
               </div>
+            </div>
           </a>
           <a class="news__link" href="#">
             <div class="news__notice">
-                <div class="news__image news__image-4"></div>
-                <div class="news__info">
-                  <h1 class="news__title">
-                    Tecnologia de Apple e Google que pretende alertar sobre o
-                    contágio do novo coronavírus: o que se sabe até agora
-                  </h1>
-                  <h3 class="news_resume">
-                    Rivais unem forças para criar sistema que permita que celulares
-                    Android e iOS 'conversem' para avisar quem teve contato com
-                    alguém que se contaminou.
-                  </h3>
-                  <p class="news__date">Há 37 minutos atrás</p>
-                </div>
+              <div class="news__image news__image-4"></div>
+              <div class="news__info">
+                <h1 class="news__title">
+                  Tecnologia de Apple e Google que pretende alertar sobre o
+                  contágio do novo coronavírus: o que se sabe até agora
+                </h1>
+                <h3 class="news_resume">
+                  Rivais unem forças para criar sistema que permita que
+                  celulares Android e iOS 'conversem' para avisar quem teve
+                  contato com alguém que se contaminou.
+                </h3>
+                <p class="news__date">Há 37 minutos atrás</p>
               </div>
+            </div>
           </a>
           <a href="#" class="news__link">
             <div class="news__notice">
-                <div class="news__image news__image-5"></div>
-                <div class="news__info">
-                  <h1 class="news__title">
-                    'Tive de usar saco plástico na cabeça': médicos brasileiros
-                    relatam precariedade em hospitais na Espanha
-                  </h1>
-                  <h3 class="news_resume">
-                    Brasileiros que trabalham em hospitais da Espanha pintam quadro
-                    dramático de hospitais superlotados, falta de proteção adequada
-                    e angústia; coronavírus matou mais de 18 mil pessoas no país.
-                  </h3>
-                  <p class="news__date">Há 37 minutos atrás</p>
-                </div>
+              <div class="news__image news__image-5"></div>
+              <div class="news__info">
+                <h1 class="news__title">
+                  'Tive de usar saco plástico na cabeça': médicos brasileiros
+                  relatam precariedade em hospitais na Espanha
+                </h1>
+                <h3 class="news_resume">
+                  Brasileiros que trabalham em hospitais da Espanha pintam
+                  quadro dramático de hospitais superlotados, falta de proteção
+                  adequada e angústia; coronavírus matou mais de 18 mil pessoas
+                  no país.
+                </h3>
+                <p class="news__date">Há 37 minutos atrás</p>
               </div>
+            </div>
           </a>
           <a href="" class="news__link">
             <div class="news__notice">
-                <div class="news__image news__image-6"></div>
-                <div class="news__info">
-                  <h1 class="news__title">
-                    Covid-19 provoca onda de contratações de profissionais de
-                    tecnologia; veja cargos em alta
-                  </h1>
-                  <h3 class="news_resume">
-                    Empresas buscam executivos para acelerar projetos de
-                    infraestrutura, reforçar segurança de dados e ampliar suporte
-                    técnico.
-                  </h3>
-                  <p class="news__date">Há 37 minutos atrás</p>
-                </div>
+              <div class="news__image news__image-6"></div>
+              <div class="news__info">
+                <h1 class="news__title">
+                  Covid-19 provoca onda de contratações de profissionais de
+                  tecnologia; veja cargos em alta
+                </h1>
+                <h3 class="news_resume">
+                  Empresas buscam executivos para acelerar projetos de
+                  infraestrutura, reforçar segurança de dados e ampliar suporte
+                  técnico.
+                </h3>
+                <p class="news__date">Há 37 minutos atrás</p>
               </div>
+            </div>
           </a>
         </div>
       </div>
     </section>
+
+    <section id="personal">
+      <div class="container">
+        <div class="personal__content">
+          <div class="personal__profile">
+            <div class="personal__profile-image"></div>
+            <div class="personal__profile-name">
+              <h2>Juliano Alves</h2>
+            </div>
+            <div class="personal__profile-function">
+              <p>Full Stack Developer</p>
+            </div>
+            <div class="personal__profile-sociais">
+              <ul class="personal__profile-list">
+                <li class="personal__profile-item">
+                  <a
+                    href="https://www.linkedin.com/in/juliano-alves-73133a183/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li class="personal__profile-item">
+                  <a href="https://github.com/julianoalvescode" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+                <li class="personal__profile-item">
+                  <a
+                    href="https://www.instagram.com/7juliano_alves"
+                    target="_blank"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="personal__info">
+            <h3 class="personal__info-title">Sobre mim</h3>
+            <p class="personal__info-p">
+              I'm passionate about technology even more when it comes to web
+              development, always in search of the best result and always
+              studying something new
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="form">
+      <div class="container">
+        <div class="form__content">
+          <div class="form__info">
+            <h4 class="form_info-title">Contato</h4>
+            <p class="form__info-p">
+              Você pode entrar comigo, o mais breve vou responder.
+            </p>
+          </div>
+          <div class="form__main">
+            <form class="form__main-form">
+              <div class="form_main-box">
+                <label>Nome</label>
+                <input type="text" />
+              </div>
+              <div class="form_main-box">
+                <label>Email</label>
+                <input type="text" />
+              </div>
+              <div class="form_main-box">
+                <label>Mensagem</label>
+                <textarea></textarea>
+              </div>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="about__content">
+          <h2 class="about__title">Fonte</h2>
+          <p>Aqui em baixo vão está os links das reportagens</p>
+          <ul class="about__list">
+            <li class="about__list-item">
+              <a class="about__list-link" target="_blank" href="https://g1.globo.com/fique-em-casa/noticia/2020/04/13/cachorros-na-quarentena-falta-de-atividade-pode-deixar-pets-ansiosos-mesmo-com-casa-cheia.ghtml">
+                Primeira Noticia
+              </a>
+            </li>
+            <li class="about__list-item">
+              <a class="about__list-link" target="_blank" href="https://www.uol.com.br/universa/noticias/redacao/2020/04/15/isolada-com-covid-19-mae-relata-drama-de-nao-ver-os-4-filhos-impotencia.htm">
+                Segunda Noticia
+              </a>
+            </li>
+            <li class="about__list-item">
+              <a class="about__list-link" target="_blank" href="https://canaltech.com.br/software/crise-da-covid-19-aumenta-a-procura-por-programadores-de-cobol-163286/">
+                Terceira Noticia
+              </a>
+            </li>
+            <li class="about__list-item">
+              <a class="about__list-link" target="_blank" href="https://g1.globo.com/economia/tecnologia/noticia/2020/04/15/tecnologia-de-apple-e-google-que-pretende-alertar-sobre-o-contagio-do-novo-coronavirus-o-que-se-sabe-ate-agora.ghtml">
+                Quarta Noticia
+              </a>
+            </li>
+            <li class="about__list-item">
+              <a class="about__list-link" target="_blank" href="https://epoca.globo.com/mundo/tive-de-usar-saco-plastico-na-cabeca-medicos-brasileiros-relatam-precariedade-em-hospitais-na-espanha-24372406">
+                Quinta Noticia
+              </a>
+            </li>
+            <li class="about__list-item">
+              <a class="about__list-link" target="_blank" href="https://g1.globo.com/economia/concursos-e-emprego/noticia/2020/04/15/covid-19-provoca-onda-de-contratacoes-de-profissionais-de-tecnologia-veja-cargos-em-alta.ghtml">
+                Sexta Noticia
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
   </body>
 </html>

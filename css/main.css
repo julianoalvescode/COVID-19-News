@@ -5,14 +5,63 @@
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html, body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     height: 100%;
+    width: 100%;
 }
 
+#button__top {
+    position: fixed;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #411c8e;
+    float:right;
+    bottom:0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+#button__top i:active {
+    color: #411c8e
+}
+
+#button__top:hover {
+    color: #411c8e;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 4px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fff; 
+    transition: all 0.3s ease-in;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b0b0b0; 
+  }
 
 body {
     font-family: 'Open Sans', Helvetica, sans-serif;
@@ -114,6 +163,31 @@ header {
     overflow: hidden !important;
     padding-left: 1.79rem;
     width: 45%;
+    
+}
+
+@media (max-width: 1130px) {
+
+
+    
+
+    .news__notice {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .news__info {
+        margin-top: 1.59rem;
+        width: 80%;
+        padding: 0;
+        
+    }
+
+    .news__image {
+        height: 1000px;
+        width: 1000px;
+    }
+
 }
 
 .news__title {
@@ -144,7 +218,7 @@ header {
 
 .news__image  {
     height: 280px;
-    width: 45%;
+    width: 50%;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50% !important;
@@ -175,4 +249,168 @@ header {
 
 .news__image-6 {
     background: url('./../assets/img/noticia6.jpg');
+}
+
+
+#personal {
+    margin: 4.5rem 0;
+}
+
+.personal__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal__profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal__profile-image {
+    width: 250px;
+    height: 300px;
+    border-radius: 4px;
+    background: url('./../assets/img/perfil.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.personal__profile-name {
+    color: #411c8e;
+    margin-top: 1.25rem;
+}
+
+.personal__profile-function {
+    font-weight: lighter;
+    color: #464646;
+    margin-top: .3rem;
+}
+
+.personal__profile-sociais {
+    margin: 1rem 0;
+}
+
+.personal__profile-list {
+    display: flex;
+}
+
+
+.personal__profile-item {
+    list-style: none;
+}
+.personal__profile-item i {
+    color: #151515;
+    font-size: 1rem;
+    margin-right: .6rem;
+    transition: all 0.2s ease-in;
+}
+
+.personal__profile-item i:hover {
+    color: #411c8e;
+}
+
+.personal__info {
+    margin-top: 1rem;
+    width: 70%;
+}
+
+.personal__info-title {
+    font-size: 2rem;
+}
+
+.personal__info-p {
+    color: #999;
+    margin-top: 1rem;
+}
+
+#form {
+    margin: 4.5rem 0;
+}
+
+.form__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form__info {
+    width: 40%;
+    margin-bottom: 1.59rem;
+}
+
+.form_info-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.form__info-p {
+    color: #797979
+}
+
+.form__main {
+    width: 40%;
+}
+
+.form__main-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_main-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0.7rem 0;
+}
+
+.form_main-box input {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    border: 1px solid #999;
+    margin-top: 0.3rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 4px;
+}
+
+.form_main-box textarea {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0.3rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 4px;
+    resize: none;
+}
+
+.form__main-form button {
+    background-color: #411c8e;
+    padding: 1rem 1.2rem;
+    margin-top: 0.5rem;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+}
+
+
+#about {
+    margin: 4rem 0;
+}
+
+.about__list {
+    margin: 1rem 0
+}
+
+.about__list-item {
+    list-style: none;
+}
+
+.about__list-link {
+    display: flex;
+    text-decoration: none;
+    margin: .5rem 0;
+}
+
+.about__title {
+    font-size: 2.25rem;
 }
